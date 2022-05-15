@@ -50,6 +50,10 @@ a:not(.primary-btn):hover {
 img {
   width: 100%;
   height: auto;
+  box-shadow: 4px 4px 8px var(--scondary-text-color);
+  border-radius: 5px;
+  display: block;
+  margin: var(--spacing-amount) 0;
 }
 
 h1,
@@ -63,6 +67,10 @@ h3 {
 h2,
 h3 {
   font-weight: 500;
+}
+
+h2 {
+  border-bottom: solid 1px var(--header-text-color);
 }
 
 nav {
@@ -85,6 +93,15 @@ nav ul {
 .project-list {
   list-style-type: none;
   padding: 0;
+}
+
+a.primary-btn {
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 @media (min-width: 800px) {
