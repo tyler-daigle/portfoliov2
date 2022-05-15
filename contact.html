@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+
+<body>
+
+  <a href="index.html" class="homepage-link">
+    <h1>TDAIGLE.COM</h1>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="links.html">my links</a></li>
+      <li><a href="tutorials.html">tutorials</a></li>
+      <li><a href="contact.html">contact me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>CONTACT ME</h2>
+
+    <p>
+      You can contact me using the form below or email me at <a href="mailto:tyler@tdaigle.com">
+        tyler@tdaigle.com
+      </a>
+    </p>
+    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+      <label for="email-address">Email Address</label>
+      <input type="email" name="email-address" />
+
+      <label for="user-message">Your Message</label>
+      <textarea name="user-message" rows="5"></textarea>
+      <div data-netlify-recaptcha="true"></div>
+      <button class="btn-primary send-button" type="button">SEND</button>
+    </form>
+  </main>
+</body>
+
+</html>

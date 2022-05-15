@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyler Daigle's Portfolio Site - Web Development - React - JavaScript - CSS - HTML</title>
+</head>
+
+<body>
+  <a href="index.html" class="homepage-link">
+    <h1>TDAIGLE.COM</h1>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="links.html">my links</a></li>
+      <li><a href="tutorials.html">tutorials</a></li>
+      <li><a href="contact.html">contact me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>ABOUT ME</h2>
+      <p>
+        Hello, my name is Tyler. I am <strong>front end web developer</strong> who likes trying to solve unique
+        problems.
+        Some of my skills include HTML, CSS, JavaScript, React and responsive web development. I am currently
+        working to advance my career as a <strong>front end web developer</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>PROJECTS</h2>
+
+      <ul class="project-list">
+        <li>
+          <h3>amateur-radio.school</h3>
+          <p>
+            I created a website to help people practice for the amateur radio exams. The website allows you to practice
+            for all three classes of exams: Technician, General and Amateur Extra.
+          </p>
+          <p>
+            The project was created with React. The question data is hosted on <strong>Contentful</strong> and the
+            client side is hosted on <strong>Netlify</strong>. It allows a user to take an exam and then see their
+            results at the end.
+          </p>
+
+          <div class="button-container">
+
+            <a class="primary-btn" href="https://amateur-radio.school" target="_blank"
+              rel="noopener noreferrer">DEMO</a>
+
+            <a class="primary-btn" href="https://github.com/tyler-daigle/practice-ham" target="_blank"
+              rel="noopener noreferrer">CODE</a>
+          </div>
+        </li>
+
+        <li>
+          <h3>Campsite Reservation Site</h3>
+          <p>
+            I wanted to create a better way for a campsite to take reservations. I made an interactive
+            form that will display available campsites based on the type of site the user chooses.
+          </p>
+          <p>
+            I began the process by designing the site in <strong>Figma</strong>. The site was created
+            with <strong>NextJS</strong> and hosted on <strong>Netlify</strong>.
+          </p>
+
+          <div class="button-container">
+
+            <a class="primary-btn" href="https://amateur-radio.school" target="_blank"
+              rel="noopener noreferrer">DEMO</a>
+
+            <a class="primary-btn" href="https://github.com/tyler-daigle/practice-ham" target="_blank"
+              rel="noopener noreferrer">CODE</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CONTACT ME</h2>
+      <p>
+        You can view my
+        <a href="https://github.com/tyler-daigle" target="_blank" rel="noopener noreferrer">Github
+          Profile
+        </a>
+        or contact me using the form below. You can also email me at
+        <a href="mailto:tyler@tdaigle.com">
+          tyler@tdaigle.com
+        </a>
+      </p>
+
+      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="email-address" />
+
+        <label for="user-message">Your Message</label>
+        <textarea name="user-message" rows="5"></textarea>
+        <div data-netlify-recaptcha="true"></div>
+        <button class="btn-primary send-button" type="button">SEND</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+
+</html>
