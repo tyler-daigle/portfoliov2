@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #ECECEC;
+
+  --primary-text-color: #1E1E1E;
+  --scondary-text-color: #454545;
+  --header-text-color: #454545;
+  --link-color: black;
+
+  --button-color: #454545;
+  --button-text-color: #ececec;
+
+  --spacing-amount: 2rem;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  padding: 0 var(--spacing-amount);
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.75rem;
+  margin: var(--spacing-amount) 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+a:not(.primary-btn):hover {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.5rem;
+  color: var(--header-text-color);
+  margin: var(--spacing-amount) 0;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-amount) 0;
+}
+
+nav h1 {
+  margin: 0 var(--spacing-amount);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: var(--spacing-amount);
+  }
+}
