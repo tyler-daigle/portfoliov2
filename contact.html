@@ -23,22 +23,30 @@
   </nav>
 
   <main>
-    <h2>CONTACT ME</h2>
 
+    <h2>CONTACT ME</h2>
     <p>
-      You can contact me using the form below or email me at <a href="mailto:tyler@tdaigle.com">
+      You can view my
+      <a href="https://github.com/tyler-daigle" target="_blank" rel="noopener noreferrer">Github
+        Profile
+      </a>
+      or contact me using the form below. You can also email me at
+      <a href="mailto:tyler@tdaigle.com">
         tyler@tdaigle.com
       </a>
     </p>
+
+
     <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
       <label for="email-address">Email Address</label>
-      <input type="email" name="email-address" />
+      <input type="email" name="email-address" placeholder="Your email address" />
 
       <label for="user-message">Your Message</label>
-      <textarea name="user-message" rows="5"></textarea>
+      <textarea name="user-message" rows="5" placeholder="Enter your message"></textarea>
       <div data-netlify-recaptcha="true"></div>
-      <button class="btn-primary send-button" type="button">SEND</button>
+      <button class="send-btn" type="button">SEND</button>
     </form>
+
   </main>
 </body>
 
